@@ -1,0 +1,8 @@
+# dbt
+profiles.yml
+logs/
+target/
+
+# IDE
+.idea
+.code

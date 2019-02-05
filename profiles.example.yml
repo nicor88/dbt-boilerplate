@@ -1,0 +1,12 @@
+boilerplate:
+  outputs:
+    dev:
+      type: postgres
+      host: "your_host"
+      port: 5432
+      user: "your_user"
+      pass: "your_pass"
+      dbname: "your_db"
+      schema: "your_schema"
+      threads: 4
+  target: dev
