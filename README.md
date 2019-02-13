@@ -7,3 +7,10 @@
 * Install pip install -r requirements.txt
 * Copy **_profiles.local.yml_** to **_~/.dbt/_**: 
 <pre>mkdir ~/.dbt/ && cp profiles.example.yml ~/.dbt/profiles.yml</pre>
+
+## Run models
+
+### Tags
+<pre>
+ dbt run --models tag:sample_tag
+</pre>

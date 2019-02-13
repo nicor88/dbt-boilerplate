@@ -4,14 +4,21 @@ version: "0.0.1"
 # profile needs to be in  ~/.dbt/profiles.yml file
 profile: "boilerplate"
 
+data-paths: ["data"]
 macro-paths: ["macros"]
 source-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 target-path: "target"
 clean-targets: ["target", "dbt_modules"]
+log-path: "logs"
 
 models:
   boilerplate:
     vars:
       "timezone": "UTC"
+
+seeds:
+  boilerplate:
+    enabled: true
+    schema: dwh

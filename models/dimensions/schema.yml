@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: date_dim
+    description: Dimensional table containings dates
+
+    columns:
+      - name: date
+        description: date field
+        tests:
+          - not_null
+          - unique
