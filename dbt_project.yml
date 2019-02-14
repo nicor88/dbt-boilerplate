@@ -22,3 +22,12 @@ seeds:
   boilerplate:
     enabled: true
     schema: dwh
+    country_dim:
+      # Override column types
+      column_types:
+        country_code: varchar(2)
+        country_name: varchar(50)
+        google_criteria_id: integer
+        currency_code: varchar(3)
+        currency_name: varchar(50)
+        is_gdpr_country: boolean
