@@ -7,6 +7,7 @@
 * Install pip install -r requirements.txt
 * Copy **_profiles.local.yml_** to **_~/.dbt/_**: 
 <pre>mkdir ~/.dbt/ && cp profiles.example.yml ~/.dbt/profiles.yml</pre>
+* Run `docker-compose up` to run a local instance of Postgres DB
 
 ## Run
 The mosty easy command to run a model is: `dbt run`, but sometimes we want to be more specific

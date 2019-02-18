@@ -6,3 +6,6 @@ target/
 # IDE
 .idea
 .code
+
+# sample data
+postgres_data/
