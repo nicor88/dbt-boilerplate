@@ -55,3 +55,7 @@ dbt docs serve
 
 ## Notes
 This repo is based on the amazing example of [jaffle_shop](https://github.com/fishtown-analytics/jaffle_shop)
+
+## TODO 
+- [] Add a Makefile to init dbt, install libs, spin up Postgres locally
+- [] Find other interesting dataset to make other examples
