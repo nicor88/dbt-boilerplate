@@ -4,13 +4,13 @@
 * Python >= 3
 
 ## Setup
-* Install pip install -r requirements.txt
-* Copy **_profiles.local.yml_** to **_~/.dbt/_**: 
-<pre>mkdir -p ~/.dbt/ && cp profiles.example.yml ~/.dbt/profiles.yml</pre>
-* Run `docker-compose up` to run a local instance of Postgres DB
+* Install dbt running: `make install-dbt`
+* Init your dbt profile running: `make init-dbt-profile`
+* Run: `make postgres-up` to run a local instance of Postgres DB
+* If you want to stop your Postgres instance, run `make postgres-down`
 
 ## Seed
-The first step to do it's to run the seed command, that will import static table to your destination db.
+The first step to do, it's to run the seed command, that will import static tables to your destination db.
 It's possible to create tables from static CSV files inside the `data` folder simply calling:
 <pre>
 dbt seed --show
@@ -20,13 +20,13 @@ dbt seed --show
 The mostly easy command to run a model is: `dbt run`, but sometimes we want to be more specific
 <pre>
 # call a model called my_model
-dbt run --models example
+dbt run --models my_model
 
 # call all the models inside dimensions folder
 dbt run --models dimensions
 
 # call all the models with the tag sample
-dbt run --models tag:sample
+dbt run --models tag:fact
 
 # call a model with a specific target
 dbt run --models example --target dev
@@ -41,7 +41,6 @@ dbt test
 dbt test --models date_dim
 
 </pre>
-
 
 ## Docs
 <pre>
