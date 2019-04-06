@@ -2,11 +2,11 @@ boilerplate:
   outputs:
     dev:
       type: postgres
-      host: "your_host"
+      host: "localhost"
       port: 5432
-      user: "your_user"
-      pass: "your_pass"
-      dbname: "your_db"
-      schema: "your_schema"
+      user: "sample_user"
+      pass: "sample_password"
+      dbname: "playground"
+      schema: "default"
       threads: 4
   target: dev
