@@ -21,8 +21,8 @@ models:
 seeds:
   boilerplate:
     enabled: true
-    schema: dwh
-    country_dim:
+    schema: raw
+    country:
       # Override column types
       column_types:
         country_code: varchar(2)

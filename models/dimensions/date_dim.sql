@@ -1,7 +1,8 @@
 {{
   config(
     materialized='table',
-    schema='dwh'
+    schema='dwh',
+    tags=['dwh', 'dimension']
   )
 }}
 
